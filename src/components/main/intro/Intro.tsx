@@ -35,7 +35,6 @@ function Intro() {
           </Card>
         </div>
       </section>
-      <hr className="opacity-30"/>
       <LinksPack/>
     </div>
   );

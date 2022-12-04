@@ -2,6 +2,7 @@ import React from "react";
 import Titulo from "../shared/titulo/Titulo";
 import { FormacionInterface } from "./formacion.interface";
 import FormacionCard from "./FormacionCard";
+import LinksPack from '../../shared/linksPack/LinksPack';
 
 function Formacion() {
   const formacion: FormacionInterface[] = [
@@ -87,16 +88,17 @@ function Formacion() {
   ];
 
   return (
-    <div>
+    <section>
       <Titulo>Formación</Titulo>
-      <ul>
+      <ul className="p-3">
         {formacion.map((estudio, index) => (
           <li key={index}>
             <FormacionCard data={estudio} />
           </li>
         ))}
       </ul>
-    </div>
+      <LinksPack/>
+    </section>
   );
 }
 

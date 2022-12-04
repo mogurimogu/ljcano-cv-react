@@ -2,6 +2,7 @@ import React from "react";
 import Titulo from "../shared/titulo/Titulo";
 import { ExperienciaInterface } from "./Experiencia.interface";
 import ExpCard from "./ExpCard";
+import LinksPack from '../../shared/linksPack/LinksPack';
 
 function Experiencia() {
   const experiencia: ExperienciaInterface[] = [
@@ -87,7 +88,7 @@ function Experiencia() {
   ];
 
   return (
-    <div>
+    <section>
       <Titulo>Experiencia</Titulo>
       <ul className="p-3">
         {experiencia.map((puesto, index) => (
@@ -96,7 +97,8 @@ function Experiencia() {
           </li>
         ))}
       </ul>
-    </div>
+      <LinksPack/>
+    </section>
   );
 }
 
