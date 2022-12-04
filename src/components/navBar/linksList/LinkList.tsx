@@ -11,14 +11,14 @@ function LinkList() {
     setPopUpActive(!popUpActive);
   };
 
-  const linkClasses = 'md:inline-block m-3 md:my-0'
+  const linkClasses = 'lg:inline-block m-3 lg:my-0'
 
   return (
-    <nav className="text-right md:flex md:items-center">
-      <button className="inline-block md:hidden p-2" onClick={menuPopUp}>
+    <nav className="text-right lg:flex lg:items-center">
+      <button className="inline-block lg:hidden p-2" onClick={menuPopUp}>
         {popUpActive? <IoCloseSharp /> : <FiMenu />}
       </button>
-      <ul className={`md:inline-block ${popUpActive ? "block w-full" : "hidden"}`}>
+      <ul className={`lg:inline-block ${popUpActive ? "block w-full" : "hidden"}`}>
         <li className={linkClasses}>
           <NavLink to={"/"} className={({ isActive }) => active(isActive)}>
             Sobre mi
@@ -38,6 +38,14 @@ function LinkList() {
             className={({ isActive }) => active(isActive)}
           >
             Experiencia
+          </NavLink>
+        </li>
+        <li className={linkClasses}>
+          <NavLink
+            to={"/formacion"}
+            className={({ isActive }) => active(isActive)}
+          >
+            Formación
           </NavLink>
         </li>
       </ul>

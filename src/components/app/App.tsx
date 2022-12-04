@@ -8,10 +8,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="container mx-auto grid lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 md:min-h-screen">
-        <div className="md:col-span-1 md:block p-3">
+        <div className="md:col-span-1 md:block p-3 md:max-h-screen md:sticky md:top-0">
           <Sidebar />
         </div>
-        <div className="xl:col-span-3 lg:col-span-2 md:col-span-2 p-3 h-full flex flex-col">
+        <div className="xl:col-span-3 lg:col-span-2 md:max-h-screen md:col-span-2 p-3 h-full flex flex-col">
           <NavBar />
           <Main />
         </div>

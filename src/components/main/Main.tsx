@@ -4,6 +4,7 @@ import './Main.css'
 import Intro from './intro/Intro';
 import Habilidades from './habilidades/Habilidades';
 import Experiencia from './experiencia/Experiencia';
+import Formacion from './formacion/Formacion';
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
         <Route path='/' element={<Intro/>}/>
         <Route path='/habilidades' element={<Habilidades/>}/>
         <Route path='/experiencia' element={<Experiencia/>}/>
+        <Route path='/formacion' element={<Formacion/>}/>
 
       </Routes>
     </div>
