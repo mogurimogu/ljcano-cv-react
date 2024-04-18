@@ -2,7 +2,7 @@ import React from "react";
 import { FormacionInterface } from "./formacion.interface";
 
 function FormacionCard(props: { data: FormacionInterface }) {
-  const { lugar, year, centro, conocimientos, estudios, descripcion, nivel } =
+  const { lugar, year, centro, conocimientos, estudios, descripcion } =
     props.data;
   const yearStr = year.toString();
 
